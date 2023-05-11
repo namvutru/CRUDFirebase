@@ -11,12 +11,15 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager2.widget.ViewPager2;
 
 import com.bumptech.glide.Glide;
 import com.example.crudfirebase.R;
+import com.example.crudfirebase.adapter.MyFragmentAdapter;
 import com.example.crudfirebase.model.ItemCart;
 import com.example.crudfirebase.model.Product;
 import com.example.crudfirebase.session.SessionManagement;
+import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -27,6 +30,7 @@ public class DetailActivity extends AppCompatActivity {
     ImageView imganhchitiet;
     TextView textten,textmota,textGiachitiet;
     Button btcancel,btaddtocart;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

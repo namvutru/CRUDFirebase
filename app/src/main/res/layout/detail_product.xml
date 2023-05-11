@@ -2,7 +2,6 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     >
 <LinearLayout
     android:layout_width="match_parent"
@@ -26,12 +25,21 @@
         android:id="@+id/textGiachitiet"
         android:textSize="20dp"
         />
-    <TextView
-        android:id="@+id/textMotachitiet"
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="236dp"
-        android:text="Mo ta chi tiet"
-        android:textSize="15dp" />
+        android:layout_height="352dp">
+
+        <TextView
+            android:id="@+id/textMotachitiet"
+            android:layout_width="match_parent"
+            android:layout_height="337dp"
+            android:text="Mo ta chi tiet"
+            android:textSize="15dp" />
+
+
+    </ScrollView>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
